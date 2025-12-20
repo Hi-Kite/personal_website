@@ -129,7 +129,7 @@ const NavControl = ({ active, setPage }) => {
 // --- 视图层 ---
 
 const HomeView = ({ setPage }) => {
-  const [status] = useState(STATUS_OPTIONS[Math.floor(Math.random() * STATUS_OPTIONS.length)]);
+  // const [status] = useState(STATUS_OPTIONS[Math.floor(Math.random() * STATUS_OPTIONS.length)]);
 
   return (
     <motion.div 
@@ -154,7 +154,7 @@ const HomeView = ({ setPage }) => {
             </h1>
           </div>
           
-          {/* 状态卡片 Widget */}
+          {/* 状态卡片 Widget
           <MaterialCard className="p-4 md:min-w-[200px] flex items-center gap-4 bg-white/[0.02]" noHover>
              <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-zinc-400">
                 {status.icon}
@@ -163,7 +163,7 @@ const HomeView = ({ setPage }) => {
                 <div className="text-[10px] font-bold text-zinc-600 uppercase tracking-widest">Current Status</div>
                 <div className={`text-sm font-medium ${status.color}`}>{status.text}</div>
              </div>
-          </MaterialCard>
+          </MaterialCard> */}
         </div>
         
         <p className="text-zinc-400 text-lg md:text-2xl max-w-2xl font-light leading-relaxed">
