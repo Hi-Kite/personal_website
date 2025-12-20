@@ -18,7 +18,8 @@ import {
   Music,
   BookOpen,
   Coffee,
-  Heart
+  Heart,
+  Video
 } from 'lucide-react';
 
 // --- Apple HIG & 液态玻璃配置 ---
@@ -31,16 +32,14 @@ const SPRING_TRANSITION = {
 
 // --- 个人数据 ---
 const PROJECTS = [
-  { id: 1, title: 'NeoVibe', tag: 'Framework', desc: '基于原子理论的高级设计系统。', icon: <Layout className="text-blue-400" /> },
-  { id: 2, title: 'imfz Portal', tag: 'Web', desc: '个人数字化展示空间门户。', icon: <Globe className="text-purple-400" /> },
-  { id: 3, title: 'Atmosphere', tag: 'Graphics', desc: 'WebGL 实时环境渲染引擎。', icon: <Cpu className="text-emerald-400" /> },
+  { id: 1, title: '本站 imfz.cn', tag: 'Web', desc: '个人数字化展示空间门户。', icon: <Globe className="text-purple-400" /> },
 ];
 
-const STATUS_OPTIONS = [
-  { text: "正在编写代码", icon: <Cpu size={12} />, color: "text-emerald-400" },
-  { text: "寻找灵感中", icon: <Sparkles size={12} />, color: "text-blue-400" },
-  { text: "咖啡休息时间", icon: <Coffee size={12} />, color: "text-orange-400" }
-];
+// const STATUS_OPTIONS = [
+//   { text: "正在编写代码", icon: <Cpu size={12} />, color: "text-emerald-400" },
+//   { text: "寻找灵感中", icon: <Sparkles size={12} />, color: "text-blue-400" },
+//   { text: "咖啡休息时间", icon: <Coffee size={12} />, color: "text-orange-400" }
+// ];
 
 // --- 背景组件：液态流光 ---
 const LiquidBackground = () => (
@@ -128,7 +127,7 @@ const NavControl = ({ active, setPage }) => {
 // --- 视图层 ---
 
 const HomeView = ({ setPage }) => {
-  const [status] = useState(STATUS_OPTIONS[Math.floor(Math.random() * STATUS_OPTIONS.length)]);
+  // const [status] = useState(STATUS_OPTIONS[Math.floor(Math.random() * STATUS_OPTIONS.length)]);
 
   return (
     <motion.div 
@@ -153,7 +152,7 @@ const HomeView = ({ setPage }) => {
             </h1>
           </div>
           
-          {/* 状态卡片 Widget */}
+          {/* 状态卡片 Widget
           <MaterialCard className="p-4 md:min-w-[200px] flex items-center gap-4 bg-white/[0.02]" noHover>
              <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-zinc-400">
                 {status.icon}
@@ -162,7 +161,7 @@ const HomeView = ({ setPage }) => {
                 <div className="text-[10px] font-bold text-zinc-600 uppercase tracking-widest">Current Status</div>
                 <div className={`text-sm font-medium ${status.color}`}>{status.text}</div>
              </div>
-          </MaterialCard>
+          </MaterialCard> */}
         </div>
         
         <p className="text-zinc-400 text-lg md:text-2xl max-w-2xl font-light leading-relaxed">
@@ -354,15 +353,19 @@ export default function App() {
                         <div className="space-y-4">
                             <h4 className="text-xs font-bold text-zinc-600 uppercase tracking-widest">Connect / 联络</h4>
                             <div className="space-y-4">
-                               <a href="#" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
+                               <a href="https://github.com/Hi-Kite" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
                                   <span className="font-medium">GitHub</span>
                                   <Github size={18} />
                                </a>
-                               <a href="#" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
+                               {/* <a href="#" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
                                   <span className="font-medium">Twitter / X</span>
                                   <Twitter size={18} />
+                               </a> */}
+                               <a href="https://spacebilibili.com/450967115" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
+                                  <span className="font-medium">哔哩哔哩 / Bilibili</span>
+                                  <Video size={18} />
                                </a>
-                               <a href="mailto:kite@imfz.cn" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
+                               <a href="mailto:im.kite@outlook.com" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
                                   <span className="font-medium">Email</span>
                                   <Mail size={18} />
                                </a>
