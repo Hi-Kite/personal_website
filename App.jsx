@@ -32,9 +32,7 @@ const SPRING_TRANSITION = {
 
 // --- 个人数据 ---
 const PROJECTS = [
-  { id: 1, title: 'NeoVibe', tag: 'Framework', desc: '基于原子理论的高级设计系统。', icon: <Layout className="text-blue-400" /> },
-  { id: 2, title: 'imfz Portal', tag: 'Web', desc: '个人数字化展示空间门户。', icon: <Globe className="text-purple-400" /> },
-  { id: 3, title: 'Atmosphere', tag: 'Graphics', desc: 'WebGL 实时环境渲染引擎。', icon: <Cpu className="text-emerald-400" /> },
+  { id: 1, title: '本站 imfz.cn', tag: 'Web', desc: '个人数字化展示空间门户。', icon: <Globe className="text-purple-400" /> },
 ];
 
 // const STATUS_OPTIONS = [
