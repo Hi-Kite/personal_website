@@ -18,8 +18,7 @@ import {
   Music,
   BookOpen,
   Coffee,
-  Heart,
-  Video
+  Heart
 } from 'lucide-react';
 
 // --- Apple HIG & 液态玻璃配置 ---
@@ -37,11 +36,11 @@ const PROJECTS = [
   { id: 3, title: 'Atmosphere', tag: 'Graphics', desc: 'WebGL 实时环境渲染引擎。', icon: <Cpu className="text-emerald-400" /> },
 ];
 
-// const STATUS_OPTIONS = [
-//   { text: "正在编写代码", icon: <Cpu size={12} />, color: "text-emerald-400" },
-//   { text: "寻找灵感中", icon: <Sparkles size={12} />, color: "text-blue-400" },
-//   { text: "咖啡休息时间", icon: <Coffee size={12} />, color: "text-orange-400" }
-// ];
+const STATUS_OPTIONS = [
+  { text: "正在编写代码", icon: <Cpu size={12} />, color: "text-emerald-400" },
+  { text: "寻找灵感中", icon: <Sparkles size={12} />, color: "text-blue-400" },
+  { text: "咖啡休息时间", icon: <Coffee size={12} />, color: "text-orange-400" }
+];
 
 // --- 背景组件：液态流光 ---
 const LiquidBackground = () => (
@@ -355,19 +354,15 @@ export default function App() {
                         <div className="space-y-4">
                             <h4 className="text-xs font-bold text-zinc-600 uppercase tracking-widest">Connect / 联络</h4>
                             <div className="space-y-4">
-                               <a href="https://github.com/Hi-Kite" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
+                               <a href="#" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
                                   <span className="font-medium">GitHub</span>
                                   <Github size={18} />
                                </a>
-                               {/* <a href="#" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
+                               <a href="#" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
                                   <span className="font-medium">Twitter / X</span>
                                   <Twitter size={18} />
-                               </a> */}
-                               <a href="https://spacebilibili.com/450967115" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
-                                  <span className="font-medium">哔哩哔哩 / Bilibili</span>
-                                  <Video size={18} />
                                </a>
-                               <a href="mailto:im.kite@outlook.com" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
+                               <a href="mailto:kite@imfz.cn" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
                                   <span className="font-medium">Email</span>
                                   <Mail size={18} />
                                </a>
