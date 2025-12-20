@@ -334,7 +334,7 @@ export default function App() {
                         <div className="space-y-4">
                           <h4 className="text-xs font-bold text-zinc-600 uppercase tracking-widest">Story / 故事</h4>
                           <p className="text-zinc-400 leading-relaxed">
-                            我是一名开发者，也是一名设计信徒。我坚信优雅的解决方案应该像空气一样自然。在过去的五年里，我一直游走于设计与代码的交界处，试图消除两者的隔阂。
+                            我是一名开发者，也是一名设计信徒。我坚信优雅的解决方案应该像空气一样自然。
                           </p>
                         </div>
                         <div className="space-y-4">
@@ -342,7 +342,7 @@ export default function App() {
                              <Heart size={12} className="text-red-500" /> Passions / 爱好
                           </h4>
                           <div className="flex flex-wrap gap-2">
-                              {['胶片摄影', '极简主义', '手冲咖啡', '赛博朋克'].map(p => (
+                              {['前端开发', '极简主义', 'Arch Linux', '计算机原理'].map(p => (
                                   <span key={p} className="px-4 py-2 bg-white/5 rounded-2xl border border-white/10 text-xs text-zinc-300">{p}</span>
                               ))}
                           </div>
