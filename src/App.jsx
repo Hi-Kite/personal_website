@@ -361,7 +361,7 @@ export default function App() {
                                   <span className="font-medium">Twitter / X</span>
                                   <Twitter size={18} />
                                </a> */}
-                               <a href="https://spacebilibili.com/450967115" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
+                               <a href="https://space.bilibili.com/450967115" className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:bg-white hover:text-black transition-all group">
                                   <span className="font-medium">哔哩哔哩 / Bilibili</span>
                                   <Video size={18} />
                                </a>
