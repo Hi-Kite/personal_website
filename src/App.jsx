@@ -269,9 +269,9 @@ const WorksView = () => (
               <h4 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">{p.title}</h4>
               <p className="text-zinc-500 mt-1 text-base leading-relaxed">{p.desc}</p>
             </div>
-            <div className="flex items-center gap-2 text-zinc-500 text-sm font-medium group-hover:text-white transition-colors">
+            {/* <div className="flex items-center gap-2 text-zinc-500 text-sm font-medium group-hover:text-white transition-colors">
                 View Case Study <ArrowUpRight size={16} />
-            </div>
+            </div> */}
           </div>
         </MaterialCard>
       ))}
