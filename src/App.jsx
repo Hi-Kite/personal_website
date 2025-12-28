@@ -388,6 +388,15 @@ export default function App() {
       <footer className="max-w-6xl mx-auto px-6 py-16 border-t border-white/[0.05]">
         <div className="flex flex-col md:flex-row justify-between gap-10 items-center">
           <div className="text-[10px] font-bold tracking-[0.3em] text-zinc-600 uppercase">
+            <a href="https://ipw.cn/ipv6webcheck/?site=imfz.cn" 
+              title="本站支持IPv6访问" 
+              target="_blank">
+              <img 
+                style={{ display: 'block', verticalAlign: 'middle' }} 
+                alt="本站支持IPv6访问" 
+                src="https://static.ipw.cn/icon/ipv6-s1.svg" 
+              />
+            </a>
              Digital Sanctuary since 2025
           </div>
           <div className="text-[#48484A] text-[9px] tracking-widest uppercase">
